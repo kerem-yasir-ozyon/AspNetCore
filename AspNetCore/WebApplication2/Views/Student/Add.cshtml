@@ -1,0 +1,103 @@
+﻿@model Student
+
+@if(Model.Name == null)
+{
+    <form asp-controller="Student" asp-action="Add">
+        <div class="row">
+            <div class="col-3"> </div>
+            <div class="col-9">
+                <label asp-for="Name">@Html.DisplayNameFor(m => m.Name)</label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"> </div>
+            <div class="col-9">
+                <label asp-for="Surname">@Html.DisplayNameFor(m => m.Surname)</label>
+                <input asp-for="Surname" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"> </div>
+            <div class="col-9">
+                <label asp-for="Email">@Html.DisplayNameFor(m => m.Email)</label>
+                <input asp-for="Email" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"> </div>
+            <div class="col-9">
+                <label asp-for="BirthDate">@Html.DisplayNameFor(m => m.BirthDate)</label>
+                <input asp-for="BirthDate" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"> </div>
+            <div class="col-9">
+                <label asp-for="Gender">@Html.DisplayNameFor(m => m.Gender)</label>
+                Kadın <input type="radio" asp-for="Gender" value="0" class="form-check" />
+                Erkek <input type="radio" asp-for="Gender" value="1" class="form-check" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"> </div>
+            <div class="col-9">
+                <label asp-for="FavoriteCar">@Html.DisplayNameFor(m => m.FavoriteCar)</label>
+                <select asp-for="FavoriteCar" asp-items="@ViewBag.Cars" class="form-select"></select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"> </div>
+            <div class="col-9">
+                <input type="submit" value="Kaydet" class="btn btn-primary" />
+            </div>
+        </div>
+    </form>
+}
+else
+{
+
+        <div class="row">
+            <div class="col-3"> </div>
+            <div class="col-9">
+                <label asp-for="Name">@Html.DisplayNameFor(m => m.Name)</label>
+                <p>@Model.Name</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"> </div>
+            <div class="col-9">
+                <label asp-for="Surname">@Html.DisplayNameFor(m => m.Surname)</label>
+                <p>@Model.Surname</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"> </div>
+            <div class="col-9">
+                <label asp-for="Email">@Html.DisplayNameFor(m => m.Email)</label>
+                <p>@Model.Email</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"> </div>
+            <div class="col-9">
+                <label asp-for="BirthDate">@Html.DisplayNameFor(m => m.BirthDate)</label>
+                <p>@Model.BirthDate</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"> </div>
+            <div class="col-9">
+                <label asp-for="Gender">@Html.DisplayNameFor(m => m.Gender)</label>
+                <p>@Model.Gender</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"> </div>
+            <div class="col-9">
+                <label asp-for="FavoriteCar">@Html.DisplayNameFor(m => m.FavoriteCar)</label>
+                <p>@Model.FavoriteCar</p>
+            </div>
+        </div>
+}
+
