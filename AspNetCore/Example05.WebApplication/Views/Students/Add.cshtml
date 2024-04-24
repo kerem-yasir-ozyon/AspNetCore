@@ -1,0 +1,25 @@
+﻿<div class="row">
+    <div class="col-md-9 col-sm-12">
+        <h1 class="mt-3">Yeni Ogrenci</h1>
+        <form asp-controller="Students" asp-action="Add">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Ogrenci Adı</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ad" name="Ad">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Ogrenci Soyadı</</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Soyad" name="Soyad">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Ogrenci Eposta</</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Eposta" name="Eposta">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Ogrenci DogumTarihi</</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="DogumTarihi" name="DTarihi">
+            </div>
+
+            <input type="submit" class="btn btn-success" value="Ekle"/>
+        </form>
+    </div>
+</div>

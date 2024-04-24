@@ -24,6 +24,9 @@ namespace WebApplication2.Models
         [Display(Name = "Favori Araba")]
         public Cars FavoriteCar { get; set; }
 
+        //[Display(Name = "Öğrenci Durumu")]
+        //public StudentStatus StudentStatus { get; set; }
+
     }
 
     public enum Gender
@@ -34,6 +37,16 @@ namespace WebApplication2.Models
         [Display(Name = "Kadın")]
         Female
     }
+
+    //public enum StudentStatus
+    //{
+    //    [Display(Name = "Pasif")]
+    //    Passive,
+    //    [Display(Name = "Aktif")]
+    //    Active,
+    //    [Display(Name = "Dondurdu")]
+    //    Frezee
+    //}
 
     public enum Cars
     {

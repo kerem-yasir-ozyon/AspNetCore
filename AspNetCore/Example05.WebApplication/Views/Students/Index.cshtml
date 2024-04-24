@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Ogrenciler";
+}
+
+    <div class="row">
+        <div class="col-md-3 col-sm-12">
+            <h1 class="mt-3">Menu</h1>
+            <div class="list-group mt-3">
+                <a asp-controller="Students" asp-action="Add" class="btn btn-primary list-group-item list-group-item-action">
+                    Yeni Ogrenci
+                </a>
+
+            <a asp-controller="Teachers" asp-action="Add" class="btn btn-success list-group-item list-group-item-action">Yeni Ogretmen</a>
+            <a asp-controller="Lessons" asp-action="Add" class="btn btn-info list-group-item list-group-item-action">Yeni Ders</a>
+                
+            </div>
+        </div>
+        
+
+        <div class="col-md-9 col-sm-12">
+            <h1 class="m-3">Ogrenci Listesi</h1>
+        <table class="table m-3">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Ad</th>
+                    <th scope="col">Soyad</th>
+                    <th scope="col">Eposta</th>
+                    <th scope="col">DogumTarihi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Kerem</td>
+                    <td>Otto</td>
+                    <td>mail@hotmail.com</td>
+                    <td>07.03.1999</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Erdem</td>
+                    <td>Otto</td>
+                    <td>mail@hotmail.com</td>
+                    <td>28.08.2003</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Ece</td>
+                    <td>Otto</td>
+                    <td>mail@hotmail.com</td>
+                    <td>25.06.1998</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
