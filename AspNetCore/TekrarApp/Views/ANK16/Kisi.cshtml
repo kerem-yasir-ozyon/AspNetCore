@@ -1,0 +1,36 @@
+﻿<div class="row">
+    <div class="col-md-9 col-sm-12">
+        <h1 class="mt-3">Kisi</h1>
+        <form asp-controller="ANK16" asp-action="Kisi">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Ad</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ad" name="Ad">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Soyad</</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Soyad" name="Soyad">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Yas</</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Yas" name="Yas">
+            </div>
+
+            <input type="submit" class="btn btn-success" value="Ekle" />
+
+            
+        </form>
+
+        @if (ViewBag.yas != null && ViewBag.yas >= 18)
+        {
+            <div class="alert alert-primary" role="alert">
+                Yas 18 den buyuk.
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-primary" role="alert">
+                Yas 18 den kucuk.
+            </div>
+        }
+    </div>
+</div>

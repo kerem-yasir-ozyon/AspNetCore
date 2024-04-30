@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example05.WebApplication", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication3", "WebApplication3\WebApplication3.csproj", "{790DA785-EC1E-42F9-A967-6048780E355E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtelApp", "OtelApp\OtelApp.csproj", "{2EA5D837-401F-451E-B5E7-84E7258453ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtelApp", "OtelApp\OtelApp.csproj", "{2EA5D837-401F-451E-B5E7-84E7258453ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TekrarApp", "TekrarApp\TekrarApp.csproj", "{E72751EA-D54B-47EE-B0BF-2769B875D095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestedLayoutApp", "NestedLayoutApp\NestedLayoutApp.csproj", "{6AC030AB-1A00-4440-9251-685BC9D9C290}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{2EA5D837-401F-451E-B5E7-84E7258453ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EA5D837-401F-451E-B5E7-84E7258453ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EA5D837-401F-451E-B5E7-84E7258453ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E72751EA-D54B-47EE-B0BF-2769B875D095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E72751EA-D54B-47EE-B0BF-2769B875D095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E72751EA-D54B-47EE-B0BF-2769B875D095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E72751EA-D54B-47EE-B0BF-2769B875D095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC030AB-1A00-4440-9251-685BC9D9C290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC030AB-1A00-4440-9251-685BC9D9C290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC030AB-1A00-4440-9251-685BC9D9C290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC030AB-1A00-4440-9251-685BC9D9C290}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

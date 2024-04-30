@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "sayilar";
+}
+
+@foreach(var sayi in ViewBag.say)
+{
+    if (sayi % 3 == 0)
+    {
+        <span style="background-color:aqua">@sayi</span>
+    }
+    else if (sayi % 7 == 0)
+    {
+        <span style="background-color:red">@sayi</span>
+
+    }
+    else
+    {
+        <span style="background-color:purple">@sayi</span>
+
+    }
+}

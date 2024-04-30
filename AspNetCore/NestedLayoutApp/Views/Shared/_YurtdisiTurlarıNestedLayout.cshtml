@@ -1,0 +1,16 @@
+﻿@{
+    Layout = "_Layout";
+}
+<div class="container-fluid">
+    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+        <ul class="navbar-nav flex-grow-1 d-flex justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link text-dark me-3" asp-area="" asp-controller="YurtdisiTurları" asp-action="Avrupa">Avrupa Turları</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark me-3" asp-area="" asp-controller="YurtdisiTurları" asp-action="Asya">Asya Turları</a>
+            </li>
+        </ul>
+    </div>
+</div>
+@RenderBody()
