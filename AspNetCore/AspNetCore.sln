@@ -19,7 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TekrarApp", "TekrarApp\Tekr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NestedLayoutApp", "NestedLayoutApp\NestedLayoutApp.csproj", "{6AC030AB-1A00-4440-9251-685BC9D9C290}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMarketApp", "SuperMarketApp\SuperMarketApp.csproj", "{1A9258C1-26A4-4271-AABC-C90E231D9607}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperMarketApp", "SuperMarketApp\SuperMarketApp.csproj", "{1A9258C1-26A4-4271-AABC-C90E231D9607}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalismaApp01", "CalismaApp01\CalismaApp01.csproj", "{848491D0-4DC5-4156-A15F-3E428F5DEBA7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalismaApp02", "CalismaApp02\CalismaApp02.csproj", "{465CF857-D7FE-4995-8A53-2A56D32B7F0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMarketResimApp", "SuperMarketResimApp\SuperMarketResimApp.csproj", "{2EB3184C-33FB-477A-850D-EC7A9469D70D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +69,18 @@ Global
 		{1A9258C1-26A4-4271-AABC-C90E231D9607}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A9258C1-26A4-4271-AABC-C90E231D9607}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A9258C1-26A4-4271-AABC-C90E231D9607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{848491D0-4DC5-4156-A15F-3E428F5DEBA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{848491D0-4DC5-4156-A15F-3E428F5DEBA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{848491D0-4DC5-4156-A15F-3E428F5DEBA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{848491D0-4DC5-4156-A15F-3E428F5DEBA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{465CF857-D7FE-4995-8A53-2A56D32B7F0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{465CF857-D7FE-4995-8A53-2A56D32B7F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{465CF857-D7FE-4995-8A53-2A56D32B7F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{465CF857-D7FE-4995-8A53-2A56D32B7F0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EB3184C-33FB-477A-850D-EC7A9469D70D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EB3184C-33FB-477A-850D-EC7A9469D70D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EB3184C-33FB-477A-850D-EC7A9469D70D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EB3184C-33FB-477A-850D-EC7A9469D70D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
