@@ -1,0 +1,91 @@
+﻿@* @section scripts
+{
+*@
+
+
+<table id="Esyalar" class="table table-hover">
+
+    <thead>
+
+        <tr>
+            <td>ID</td>
+            <td>Ad</td>
+            <td>Fiyat</td>
+        </tr>
+
+    </thead>
+
+    <tbody>
+    </tbody>
+
+</table>
+
+<hr />
+<div>
+    <h2>Esya Ekleme</h2>
+    <label>Ad:</label><input id="txtAd"/><br />
+    <label>Fiyat:</label><input id="txtFiyat" /><br />
+    <input type="submit" id="btnEkle" />
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js">  </script>
+<script>
+    $(document).ready(function () {
+
+        $.ajax({
+
+            url: "https://localhost:7148/Esya/Listele",
+            type: "GET",
+            dataType: "JSON",
+            contentType: "application/json;charset=utf-8",
+            success: function (data) {
+               
+                $.each(data, function (i, esya) {
+                    
+                    var esyaSatiri = "<tr>" +
+                        "<td>" + esya.id + "</td>" +
+                        "<td>" + esya.ad + "</td>" +
+                        "<td>" + esya.fiyat + "</td></tr>";
+
+                    $("#Esyalar tbody").append(esyaSatiri);
+                })
+
+            },
+
+            error: function () {
+
+                alert("Hata oluştu!");
+            }
+
+        });
+
+    });
+
+    $("#btnEkle").click(function () {
+
+        let yeniEsya = {
+            ad: $("#txtAd").val(),
+            fiyat: $("#txtFiyat").val()
+        };
+        $.ajax({
+
+            url: "https://localhost:7148/Esya/Ekle",
+            type: "Post",
+            dataType: yeniEsya,
+            success: function (data) {
+                
+                alert("Başarıyla eklenmiştir.")
+                location.reload("Esya/Index")
+                })
+
+            },
+
+            error: function () {
+
+                alert("Hata oluştu!");
+            }
+
+        });
+    });
+</script>
